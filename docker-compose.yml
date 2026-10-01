@@ -1,0 +1,9 @@
+services:
+  event-demo:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      PORT: 3000
+      LOG_LEVEL: info
+      MAX_RETRIES: 3
+      BASE_RETRY_DELAY_MS: 100
